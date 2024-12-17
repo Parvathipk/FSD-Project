@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONEFITT - Fitness Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images\logo.jpg" alt="ONEFITT Logo" class="logo-image">
+            <div class="logo-text">
+                <h1>ONEFITT</h1>
+                <p class="slogan">Your Fitness Journey Starts Here</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="fitness.html" class="active">Fitness Tracking</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="mental.html">Mental Wellness</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="recommendation.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fitness-section">
+            <div class="workout-form">
+                <h2>Log Your Workout</h2>
+                <form action="#" method="POST" class="form-workout">
+                    <div class="form-group">
+                        <label for="workout-type">Workout Type:</label>
+                        <select id="workout-type" name="workout-type" required>
+                            <option value="cardio">Cardio</option>
+                            <option value="walking">Strength</option>
+                            <option value="yoga">Yoga</option>
+                            <option value="cycling">Cycling</option>
+                            <option value="dance">Dancing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration (minutes):</label>
+                        <input type="number" id="duration" name="duration" placeholder="Enter duration" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="calories">Calories Burned:</label>
+                        <input type="number" id="calories" name="calories" placeholder="Enter calories burned" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Add Workout</button>
+                </form>
+                
+            </div>
+            <div class="workout-history">
+                <h2>Workout History</h2>
+                <ul class="history-list">
+                    <li>
+                        <img src="images\cardio.jpeg" alt="Cardio Icon">
+                        <strong>Cardio: </strong> 30 minutes, 300 kcal
+                    </li>
+                    <li>
+                        <img src="images\walking.jpeg" alt="walking Icon">
+                        <strong>Walking: </strong> 45 minutes, 400 kcal
+                    </li>
+                    <li>
+                        <img src="images\yoga.jpeg" alt="Yoga Icon">
+                        <strong>Yoga: </strong> 20 minutes, 150 kcal
+                    </li>
+                    <li>
+                        <img src="images\cycling.jpeg" alt="Cycling Icon">
+                        <strong>Cycling: </strong> 20 minutes, 150 kcal
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ONEFITT. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

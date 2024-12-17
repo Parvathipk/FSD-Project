@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONEFITT - Nutrition Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images\logo.jpg" alt="ONEFITT Logo" class="logo-image">
+            <div class="logo-text">
+                <h1>ONEFITT</h1>
+                <p class="slogan">Your Fitness Journey Starts Here</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="fitness.html">Fitness Tracking</a></li>
+                <li><a href="nutrition.html" class="active">Nutrition</a></li>
+                <li><a href="mental.html">Mental Wellness</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="recommendation.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="nutrition-section">
+            <div class="meal-log">
+                <h2>Log Your Meal</h2>
+                <form action="#" method="POST" class="form-nutrition">
+                    <label for="meal-name">Meal Name:</label>
+                    <input type="text" id="meal-name" name="meal-name" placeholder="e.g., Breakfast, Lunch" required>
+
+                    <label for="calories">Calories:</label>
+                    <input type="number" id="calories" name="calories" placeholder="Enter calories" required>
+
+                    <label for="ingredients">Ingredients:</label>
+                    <textarea id="ingredients" name="ingredients" rows="4" placeholder="Enter ingredients" required></textarea>
+
+                    <button type="submit" class="btn-submit">Add Meal</button>
+                </form>
+            </div>
+            <div class="meal-stats">
+                <h2>Today's Nutrition Stats</h2>
+                <ul>
+                    <li>Total Calories: 1200 kcal</li>
+                    <li>Carbohydrates: 150 g</li>
+                    <li>Proteins: 50 g</li>
+                    <li>Fats: 40 g</li>
+                </ul>
+            </div>
+        </section>
+        <section class="preset-gallery">
+            <h2>Nutritious Meals</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images\salad.jpeg" alt="Salad">
+                    <p>Fresh Salad - 150 kcal</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images\chicken.jpeg" alt="Grilled Chicken">
+                    <p>Non-Vegetarian food - 300 kcal</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images\Drinks.jpeg" alt="Fruit Smoothie">
+                    <p>Healthy Drinks - 200 kcal</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ONEFITT. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

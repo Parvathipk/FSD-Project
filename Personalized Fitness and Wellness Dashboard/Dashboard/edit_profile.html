@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONEFITT - Edit Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images\logo.jpg" alt="ONEFITT Logo" class="logo-image">
+            <div class="logo-text">
+                <h1>ONEFITT</h1>
+                <p class="slogan">Your Fitness Journey Starts Here</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="fitness.html">Fitness Tracking</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="mental.html">Mental Wellness</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="recommendation.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="edit-profile-section">
+            <h2>Edit Your Profile</h2>
+            <form action="#" method="POST" class="edit-profile-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" value="John Doe" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" value="johndoe@example.com" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" value="28" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" placeholder="Enter your height" value="175" required>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" placeholder="Enter your weight" value="70" required>
+
+                <label for="goal">Fitness Goal:</label>
+                <input type="text" id="goal" name="goal" placeholder="Enter your goal" value="Lose 5 kg" required>
+
+                <button type="submit" class="btn-save">Save Changes</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ONEFITT. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

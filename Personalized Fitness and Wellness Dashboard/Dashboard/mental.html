@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONEFITT - Mental Wellness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="wellness-page">
+    <header>
+        <div class="logo">
+            <img src="images\logo.jpg" alt="ONEFITT Logo" class="logo-image">
+            <div class="logo-text">
+                <h1>ONEFITT</h1>
+                <p class="slogan">Your Fitness Journey Starts Here</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <<li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="fitness.html">Fitness Tracking</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="mental.html"  class="active">Mental Wellness</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="recommendation.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="quote-section">
+            <h2>Today's Motivation</h2>
+            <div class="quote-container">
+                <p>"Taking time to do nothing often brings everything into perspective." - Doe Zantamata</p>
+            </div>
+        </section>
+        <section class="activities-section">
+            <h2>Mindfulness Activities</h2>
+            <div class="activity-grid">
+                <div class="activity-item">
+                    <img src="images\yoga1.jpeg" alt="Meditation">
+                    <h4>Meditation</h4>
+                    <p>Focus on your breath and find inner calm.</p>
+                </div>
+                <div class="activity-item">
+                    <img src="images\nature_walk.jpeg" alt="Nature Walk">
+                    <h4>Nature Walk</h4>
+                    <p>Take a relaxing walk to connect with nature.</p>
+                </div>
+                <div class="activity-item">
+                    <img src="images\yoga.jpeg" alt="Yoga">
+                    <h4>Yoga</h4>
+                    <p>Stretch your body and clear your mind.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mood-tracking">
+            <h2>Log Your Mood</h2>
+            <form action="#" method="POST" class="form-mood">
+                <label for="mood">How do you feel?</label>
+                <select id="mood" name="mood" required>
+                    <option value="happy">Happy</option>
+                    <option value="relaxed">Relaxed</option>
+                    <option value="anxious">Anxious</option>
+                    <option value="stressed">Stressed</option>
+                </select>
+
+                <label for="mood-notes">Notes:</label>
+                <textarea id="mood-notes" name="mood-notes" rows="4" placeholder="Write down your thoughts..." required></textarea>
+
+                <button type="submit" class="btn-submit">Save Mood</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ONEFITT. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
